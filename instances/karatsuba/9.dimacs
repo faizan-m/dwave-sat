@@ -1,0 +1,8 @@
+p cnf 4 4 
+c Factors encoded in variables 1-2 and 3-4
+c Target number: 9
+c Factors: 3 x 3
+2 0
+3 0
+1 0
+4 0
