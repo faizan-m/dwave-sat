@@ -1,0 +1,12 @@
+p cnf 8 8 
+c Factors encoded in variables 1-5 and 6-8
+c Target number: 155
+c Factors: 31 x 5
+1 0
+2 0
+8 0
+3 0
+4 0
+5 0
+6 0
+-7 0

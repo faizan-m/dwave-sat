@@ -1,0 +1,14 @@
+p cnf 10 10 
+c Factors encoded in variables 1-5 and 6-10
+c Target number: 899
+c Factors: 31 x 29
+2 7 0
+1 0
+8 0
+3 0
+9 0
+4 0
+10 0
+5 0
+6 0
+-2 -7 0

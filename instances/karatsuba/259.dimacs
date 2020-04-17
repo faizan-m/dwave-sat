@@ -1,0 +1,13 @@
+p cnf 9 9 
+c Factors encoded in variables 1-6 and 7-9
+c Target number: 259
+c Factors: 37 x 7
+-5 0
+1 0
+-4 0
+8 0
+3 0
+-2 0
+9 0
+6 0
+7 0

@@ -40,22 +40,34 @@ def genVarNum(data):
 	fig.savefig(RESULTS_DIRECTORY+"VarNum.png")
 
 def genClaNum(data):
-	v = []
+	c = []
 	n = []
 
 	for d in data:
-		v.append(d["clauses"])
+		c.append(d["clauses"])
 		n.append(d["number"])
 
 	fig, ax = plt.subplots()
-	ax.scatter(n, v)
+	ax.scatter(n, c)
 	ax.set(xlabel="Number", ylabel="Clauses Used")
 	fig.savefig(RESULTS_DIRECTORY+"ClaNum.png")
 
+def genVarCla(data):
+	c = []
+	v = []
+
+	for d in data:
+		c.append(d["clauses"])
+		v.append(d["variables"])
+
+	fig, ax = plt.subplots()
+	ax.scatter(v, c)
+	ax.set(xlabel="Variables Used", ylabel="Clauses Used")
+	fig.savefig(RESULTS_DIRECTORY+"VarCla.png")
 
 def generatePlots():
 	data = extractData()
-	plots = [genVarNum, genClaNum]
+	plots = [genVarNum, genClaNum, genVarCla]
 
 	for p in plots:
 		p(data)
