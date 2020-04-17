@@ -22,7 +22,14 @@ def getTimedQUBOfromDIMACS(path, t):
 		p.join()
 		return None
 
-	return return_dict[0]
+	result = None
+
+	try:
+		result = return_dict[0]
+	except:
+		pass
+
+	return result
 
 def getQUBOfromDIMACS(path, return_dict):
 	with open(path, 'r') as fp:
